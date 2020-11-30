@@ -1,0 +1,309 @@
+
+
+
+
+.estilo1{
+    font-style: italic;
+    font-size: 10vw;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;  
+
+}
+
+.lista1{
+    list-style-type: circle;
+    list-style-position: inside;
+
+}
+
+.estilo2{
+    font-style: italic;
+    font-size: 7vw;
+    font-weight: bolder;
+    text-align:left;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-top: 20px;
+
+}
+body{
+    background-image: url(../imagenes/foto2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 1fr;
+    font-size: 20px;
+
+
+}
+
+
+.estilo3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;   
+    color: brown;
+    font-size: 19px;
+    
+    
+}
+ 
+/*ul li{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: coral;
+    font-style: italic;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    height: 30px;
+    line-height: 28px;
+ }*/
+
+/*li:hover{
+    background-color: rgba(255, 250, 205, 0.747);
+}*/
+
+a{
+    text-decoration: none;
+   
+}
+section img {
+    background-size: unset;
+    background-position: left;
+    background-repeat: repeat;
+    border-radius: 35px;
+}
+
+.contenedorUno{
+    width: 35%;
+    font-family: inherit;
+    font-style: unset;
+    font-family: sans-serif;
+    border-radius: 50px;
+    margin: 20% 40% 12% 25%;
+    border-bottom-left-radius: inherit;
+    padding: 3% 2% 1% 4%;
+}
+
+.contenedorDos{
+    width: 25%;
+    font-family: inherit;
+    font-style: oblique;
+    font-family: sans-serif;
+    border-radius: 45px;
+    margin: 12% 20% 12% 35%;
+    border-bottom-left-radius: unset;
+    padding: center;
+    padding-right: 1px;
+    
+}
+
+.socalo{
+    height: 17vh;
+    width: 202vh;
+    background-color: rgba(230, 230, 250, 0.116);
+    padding: 2rem; 
+    text-align: center;  
+ }
+.iconos {
+        width: 38px ;
+    }
+
+.titulo{
+    height: 17vh;
+    width: 202vh;
+    background-color: rgba(58, 184, 153, 0.356);
+    padding: 2rem; 
+    text-align: left; 
+    font-family: "IBM Plex Serif";
+    font-size: 3rem;
+
+}    
+aside{ 
+    margin: 12% 1% 19% 1%;
+    color: rgb(226, 64, 64);
+    font-size: 20;
+    line-height: 1.6;
+    font-style: oblique;
+    font-weight: bolder;
+}  
+
+.margen{
+    width: 75%;
+    height: 80%;
+    margin-top: 12%;
+}
+
+h1{
+    color: rgba(238, 46, 142, 0.781);
+}
+
+/*ul li a{
+    color: darkorange;
+}*/
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 220px; height: 20%;
+    transition: all 2s;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    width: 70%; height: 20%;
+    
+
+}
+
+.clave{
+    display: flex;
+    flex-direction: column;
+    width: 60%; height: 20%;
+   
+
+}
+
+.comentario{
+    display: flex;
+    flex-direction: column;
+    width: 100%; height: 180%;
+    
+}
+
+.edad{
+    display: flex;
+    flex-direction: column;
+    width: 20%; height: 50%;
+    
+}
+
+
+.mail{
+    display: flex;
+    flex-direction: column;
+    width: 90%; height: 20%;
+    
+}
+
+.contacto1{
+    margin: 12 20 0 20;
+    
+}
+     
+.input{
+    width: 100%; height: 100%;
+    transition: all 2s;
+}
+
+
+.gridSobreMi{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 15% 70% 15%;
+    grid-template-areas: "h1        h1"
+                          "menu   menu"
+                          "video  texto"
+                          "footer  footer";                                                 
+}
+header{
+    grid-area: h1;
+    grid-template-rows: 20%;
+}
+
+nav{
+    grid-area: menu ;
+    grid-template-rows: 15%;
+    
+}
+section{
+    grid-area: video;
+    grid-template-columns: 50% ;
+    grid-template-rows: 40%;
+    align-self: center;
+    margin: 12% 12% 15% 32%;
+    
+}
+aside{
+    grid-area: texto;
+    grid-template-columns: 40%;
+    grid-template-rows: 40%;
+    align-self: center;
+
+}
+
+footer{
+    grid-area: footer;
+    grid-template-rows: 20%;
+}
+.video{
+    height: 40%;
+    width: 70%;
+}
+
+.benef{
+    display: flex;
+    height: 40%;
+    
+}
+
+.no-gutters{
+    padding-left: 0 !important;
+    padding-right: 0 auto !important;
+}
+
+
+.nav-link{
+    color: rgb(255, 102, 0) !important;
+
+}
+
+.nav-item{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-item :hover{
+    background-color: rgba(58, 184, 153, 0.356);
+    color: rgba(0, 0, 0, 0.514) !important;
+    border-radius: 2rem;
+    font-style: oblique;
+}
+
+.carousel-item{
+    height: 400px;
+}
+@media(min-whidht: 576px){
+    .carousel-item{
+        height: 100vh !important;
+    }
+}
+.slide1{
+    background-image: url(/estilos/imagenes/benef.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide2{
+    background-image: url(/estilos/imagenes/benef1.png);
+    background-size: cover;
+    background-position: center;
+}
+.slide3{
+    background-image: url(/estilos/imagenes/benef2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.video{
+    height: 78%;
+    width: 60%;
+}

@@ -1,0 +1,380 @@
+.estilo1 {
+  font-style: italic;
+  font-size: 10vw;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.lista1 {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.estilo2 {
+  font-style: italic;
+  font-size: 7vw;
+  font-weight: bolder;
+  text-align: left;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+body {
+  background-image: url(../imagenes/foto2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 1fr;
+  font-size: 20px;
+}
+
+.estilo3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+  font-size: 19px;
+}
+
+/*ul li{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: coral;
+    font-style: italic;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    height: 30px;
+    line-height: 28px;
+ }*/
+/*li:hover{
+    background-color: rgba(255, 250, 205, 0.747);
+}*/
+a {
+  text-decoration: none;
+}
+
+section img {
+  background-size: unset;
+  background-position: left;
+  background-repeat: repeat;
+  border-radius: 35px;
+}
+
+.contenedorUno {
+  width: 35%;
+  font-family: inherit;
+  font-style: unset;
+  font-family: sans-serif;
+  border-radius: 50px;
+  margin: 20% 40% 12% 8%;
+  border-bottom-left-radius: inherit;
+  padding: 3% 2% 1% 4%;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.comentario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 180%;
+}
+
+.nombre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.contenedorDos {
+  width: 25%;
+  font-family: inherit;
+  font-style: oblique;
+  font-family: sans-serif;
+  border-radius: 45px;
+  margin: 12% 20% 12% 35%;
+  border-bottom-left-radius: unset;
+  padding: center;
+  padding-right: 1px;
+}
+
+/*HEADER*/
+.titulo {
+  height: 17vh;
+  width: 202vh;
+  background-color: rgba(58, 184, 153, 0.253);
+  padding: 2rem;
+  text-align: left;
+  font-family: "IBM Plex Serif";
+  font-size: 3rem;
+}
+
+h1 {
+  color: rgba(238, 46, 142, 0.781);
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: menu;
+      grid-template-rows: 15%;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: h1;
+      grid-template-rows: 20%;
+}
+
+.nav-link {
+  color: #ff6600 !important;
+}
+
+.nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-item :hover {
+  background-color: rgba(58, 184, 153, 0.253);
+  color: rgba(0, 0, 0, 0.514) !important;
+  border-radius: 2rem;
+  font-style: oblique;
+}
+
+/*FIN DE HEARD*/
+aside {
+  margin: 12% 1% 19% 1%;
+  color: rgba(226, 64, 64, 0.603);
+  font-size: 20;
+  line-height: 1.6;
+  font-style: "printing";
+  font-weight: rgba(58, 184, 153, 0.253);
+}
+
+.margen {
+  width: 75%;
+  height: 80%;
+  margin-top: 12%;
+}
+
+/*ul li a{
+    color: darkorange;
+}*/
+.padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 220px;
+  height: 20%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+/*.clave{
+    display: flex;
+    flex-direction: column;
+    width: 60%; height: 20%;
+}*/
+.edad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  height: 50%;
+}
+
+.mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 20%;
+}
+
+.contacto1 {
+  margin: 12 20 0 20;
+}
+
+.gridSobreMi {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 20% 15% 70% 15%;
+      grid-template-rows: 20% 15% 70% 15%;
+      grid-template-areas: "h1        h1" "menu   menu" "video  texto" "footer  footer";
+}
+
+section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: video;
+  -ms-grid-columns: 30%;
+      grid-template-columns: 30%;
+  -ms-grid-rows: 40%;
+      grid-template-rows: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 10% 12% 13% 40%;
+}
+
+section .video {
+  height: 80%;
+  width: 65%;
+}
+
+aside {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: texto;
+  -ms-grid-columns: 40%;
+      grid-template-columns: 40%;
+  -ms-grid-rows: 40%;
+      grid-template-rows: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*FOOTER*/
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  -ms-grid-rows: 20%;
+      grid-template-rows: 20%;
+}
+
+.iconos {
+  width: 38px;
+}
+
+.socalo {
+  height: 17vh;
+  width: 202vh;
+  background-color: rgba(230, 230, 250, 0.116);
+  padding: 2rem;
+  text-align: center;
+}
+
+/*FIN DE FOOTER*/
+/*.video{
+    height: 60%;
+    width: 50%;
+}*/
+.benef {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40%;
+}
+
+.no-gutters {
+  padding-left: 0 !important;
+  padding-right: 0 auto !important;
+}
+
+.carousel-item {
+  height: 90px;
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 100vh !important;
+  }
+}
+
+.slide1 {
+  background-image: url(../imagenes/benef.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide2 {
+  background-image: url(../imagenes/benef1.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide3 {
+  background-image: url(../imagenes/benef2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.tarjeta {
+  margin: 0 auto;
+}
+
+.card-img {
+  background-image: url(../imagenes/foto4.jpg);
+  border-radius: 45%;
+  height: 150px;
+  width: 500px;
+}
+
+@media (min-width: 992px) {
+  .card-img {
+    height: 100vh !important;
+  }
+}
+
+masoterapia {
+  height: 17vh;
+  width: 202vh;
+  background-color: rgba(58, 184, 153, 0.253);
+  padding: 2rem;
+  text-align: left;
+  font-family: "IBM Plex Serif";
+  font-size: 3rem;
+  color: rgba(238, 46, 142, 0.781);
+}
+/*# sourceMappingURL=style.css.map */
