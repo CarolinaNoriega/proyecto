@@ -147,10 +147,10 @@ nav{
     
 }
 
-header{
+/*header{
     grid-area: h1;
     grid-template-rows: 20%;
-}
+}*/
 
 .nav-link{
     color: rgb(255, 102, 0) !important;
@@ -360,6 +360,6 @@ footer{
     color:$fucsia;
 }
 
-masoterapia{
+.masoterapia{
     @include title();
 }

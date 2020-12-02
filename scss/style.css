@@ -130,20 +130,16 @@ h1 {
 }
 
 nav {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: menu;
-      grid-template-rows: 15%;
+  grid-template-rows: 15%;
 }
 
-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+/*header {
   -ms-grid-column-span: 2;
   grid-area: h1;
-      grid-template-rows: 20%;
-}
+  grid-template-rows: 20%;
+}*/
 
 .nav-link {
   color: #ff6600 !important;
@@ -181,8 +177,6 @@ aside {
     color: darkorange;
 }*/
 .padre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -248,10 +242,13 @@ aside {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 20% 15% 70% 15%;
       grid-template-rows: 20% 15% 70% 15%;
-      grid-template-areas: "h1        h1" "menu   menu" "video  texto" "footer  footer";
+      grid-template-areas: "h1        h1"
+ "menu   menu"
+ "video  texto"
+ "footer  footer";
 }
 
-section {
+/*section {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: video;
@@ -263,14 +260,14 @@ section {
       -ms-grid-row-align: center;
       align-self: center;
   margin: 10% 12% 13% 40%;
-}
+}*/
 
 section .video {
   height: 80%;
   width: 65%;
 }
 
-aside {
+/*aside {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: texto;
@@ -281,17 +278,17 @@ aside {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
+}*/
 
 /*FOOTER*/
-footer {
+/*footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
   -ms-grid-rows: 20%;
       grid-template-rows: 20%;
-}
+}*/
 
 .iconos {
   width: 38px;
@@ -310,12 +307,12 @@ footer {
     height: 60%;
     width: 50%;
 }*/
-.benef {
+/*.benef {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 40%;
-}
+}*/
 
 .no-gutters {
   padding-left: 0 !important;
@@ -367,7 +364,7 @@ footer {
   }
 }
 
-masoterapia {
+.masoterapia {
   height: 17vh;
   width: 202vh;
   background-color: rgba(58, 184, 153, 0.253);
