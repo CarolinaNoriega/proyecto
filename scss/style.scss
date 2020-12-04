@@ -2,10 +2,12 @@ $bordo: brown;
 $texto:rgba(226, 64, 64, 0.603);
 $verde:rgba(58, 184, 153, 0.253);
 $fucsia:rgba(238, 46, 142, 0.781);
+$colorletramenu:rgb(255, 102, 0);
 $fuentexto: "Noto Sans";
 $stylofuent: "printing";
 $fontitulo: "IBM Plex Serif";
 $font-size: ("large": 3rem);
+
 
 
 
@@ -43,8 +45,6 @@ body{
     background-size: cover;
     background-size: 1fr;
     font-size: 20px;
-
-
 }
 
 
@@ -141,33 +141,16 @@ section img {
 h1{
     color:$fucsia;
 }*/
-nav{
+/*nav{
     grid-area: menu ;
     grid-template-rows: 15%;
     
 }
-
+*/
 /*header{
     grid-area: h1;
     grid-template-rows: 20%;
 }*/
-
-.nav-link{
-    color: rgb(255, 102, 0) !important;
-
-}
-
-.nav-item{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.nav-item :hover{
-    background-color:$verde;
-    color: rgba(0, 0, 0, 0.514) !important;
-    border-radius: 2rem;
-    font-style: oblique;
-}
-
 
 
 
@@ -362,4 +345,32 @@ footer{
 
 .masoterapia{
     @include title();
+}
+.navbar{
+    background-color: $verde !important;
+    color:$colorletramenu !important ;
+    padding: 1rem,2rem;
+    font-family: $fontitulo;
+    font-style: $stylofuent;
+    font-size: map-get($map: $font-size, $key:large );
+  } 
+
+.nav-link{
+    color: $colorletramenu !important;
+}
+/*.nav-item{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}*/
+.nav-item :hover{
+    background-color: $colorletramenu !important;
+    color: yellow !important;
+    border-radius: 2rem;
+    font-style: $stylofuent;
+    border-radius: 2rem;
+}
+
+.nav-item{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }

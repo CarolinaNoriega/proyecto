@@ -115,48 +115,30 @@ section img {
 }
 
 /*HEADER*/
-.titulo {
-  height: 17vh;
-  width: 202vh;
-  background-color: rgba(58, 184, 153, 0.253);
-  padding: 2rem;
-  text-align: left;
-  font-family: "IBM Plex Serif";
-  font-size: 3rem;
-}
+/*.titulo{
+    height: 17vh;
+    width: 202vh;
+    background-color: $verde;
+    padding: 2rem; 
+    text-align: left; 
+    font-family: "IBM Plex Serif";
+    font-size: 3rem;
 
-h1 {
-  color: rgba(238, 46, 142, 0.781);
-}
 
-nav {
-  -ms-grid-column-span: 2;
-  grid-area: menu;
-  grid-template-rows: 15%;
-}
-
-/*header {
-  -ms-grid-column-span: 2;
-  grid-area: h1;
-  grid-template-rows: 20%;
+}    
+h1{
+    color:$fucsia;
 }*/
-
-.nav-link {
-  color: #ff6600 !important;
+/*nav{
+    grid-area: menu ;
+    grid-template-rows: 15%;
+    
 }
-
-.nav-item {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.nav-item :hover {
-  background-color: rgba(58, 184, 153, 0.253);
-  color: rgba(0, 0, 0, 0.514) !important;
-  border-radius: 2rem;
-  font-style: oblique;
-}
-
+*/
+/*header{
+    grid-area: h1;
+    grid-template-rows: 20%;
+}*/
 /*FIN DE HEARD*/
 aside {
   margin: 12% 1% 19% 1%;
@@ -176,17 +158,12 @@ aside {
 /*ul li a{
     color: darkorange;
 }*/
-.padre {
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
+/*.padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}*/
 .contacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,16 +219,11 @@ aside {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 20% 15% 70% 15%;
       grid-template-rows: 20% 15% 70% 15%;
-      grid-template-areas: "h1        h1"
- "menu   menu"
- "video  texto"
- "footer  footer";
+      grid-template-areas: "h1        h1" "menu   menu" "video  texto" "footer  footer";
 }
 
-/*section {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: video;
+section {
+  grid-area: "video";
   -ms-grid-columns: 30%;
       grid-template-columns: 30%;
   -ms-grid-rows: 40%;
@@ -260,17 +232,15 @@ aside {
       -ms-grid-row-align: center;
       align-self: center;
   margin: 10% 12% 13% 40%;
-}*/
+}
 
 section .video {
   height: 80%;
   width: 65%;
 }
 
-/*aside {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: texto;
+aside {
+  grid-area: "texto";
   -ms-grid-columns: 40%;
       grid-template-columns: 40%;
   -ms-grid-rows: 40%;
@@ -278,17 +248,14 @@ section .video {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}*/
+}
 
 /*FOOTER*/
-/*footer {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: footer;
+footer {
+  grid-area: "footer";
   -ms-grid-rows: 20%;
       grid-template-rows: 20%;
-}*/
+}
 
 .iconos {
   width: 38px;
@@ -307,12 +274,12 @@ section .video {
     height: 60%;
     width: 50%;
 }*/
-/*.benef {
+.benef {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 40%;
-}*/
+}
 
 .no-gutters {
   padding-left: 0 !important;
@@ -364,14 +331,47 @@ section .video {
   }
 }
 
-.masoterapia {
-  height: 17vh;
-  width: 202vh;
-  background-color: rgba(58, 184, 153, 0.253);
-  padding: 2rem;
-  text-align: left;
+/*@mixin title {
+    height: 17vh;
+    width: 202vh;
+    background-color: $verde;
+    padding: 2rem; 
+    text-align: left; 
+    font-family: $fontitulo;
+    font-size: map-get($map: font-size, $key: large);
+    color:$fucsia;
+}
+
+.masoterapia{
+    @include title();
+}*/
+.navbar {
+  background-color: rgba(58, 184, 153, 0.253) !important;
+  color: #ff6600 !important;
+  padding: 1rem,2rem;
   font-family: "IBM Plex Serif";
+  font-style: "printing";
   font-size: 3rem;
-  color: rgba(238, 46, 142, 0.781);
+}
+
+.nav-link {
+  color: #ff6600 !important;
+}
+
+/*.nav-item{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}*/
+.nav-item :hover {
+  background-color: #ff6600 !important;
+  color: yellow !important;
+  border-radius: 2rem;
+  font-style: "printing";
+  border-radius: 2rem;
+}
+
+.nav-item {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
